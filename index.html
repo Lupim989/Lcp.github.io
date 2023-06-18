@@ -1,0 +1,121 @@
+   <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="CSS.css">
+    <title>LPC</title>
+</head>
+<body >
+  <div>
+     <!--HOME-->
+    <div class="w3-bar"  style="display: flex;justify-content: center; background-color: black" >
+        <a href="index2.html" class="w3-bar-item w3-button w3-mobile w3-text-white ">Idoso</a>
+  <a href="#" class="w3-bar-item w3-button w3-mobile w3-text-white  ">Inicio</a>
+  <a href="#" class="w3-bar-item w3-button w3-mobile w3-text-white ">Em breve </a>
+    </div>
+    <br>
+    <!--FIM HOME-->
+
+    <!--Conteudo-->
+    <div class="w3-center">
+      <br>
+      <h1 class="w3-center" >O que é Inclusão e Acessibilidade?</h1>
+      <img src="imagem/acessibilidade2.jpg" alt="">
+      
+
+       <p class="" style="font-size: 20px;" >A acessibilidade é a capacidade de uma pessoa com deficiência ou limitação de usar,<br>
+         entrar ou participar de algo, como um edifício, um serviço ou um produto. Em outras palavras, a acessibili <br>
+         dade visa garantir que todos os indivíduos possam utilizar e acessar os mesmos recursos e oportunidades, in <br>
+         dependentemente de suas limitações ou deficiências. Ambos os conceitos são importantes para garantir a igual <br>
+         dade e a justiça social em nossa sociedade.cidadania e contribuir para o bem-estar coletivo. <br>
+         Inclusão é o processo de garantir que todas as pessoas tenham igualdade de oportunidades, <br>
+         acesso e participação em todos os aspectos da sociedade, independentemente de suas diferenças.</p>
+         <br>
+        
+         <h1>Diferença de inclusão e acessibilidade</h1>
+         <br>
+         <img src="imagem/acessibilidade3.jpg" alt="">
+         <br>
+
+
+         <p style="font-size: 20px;">
+          A inclusão se refere a garantir que todas as pessoas, independentemente de suas diferenças, sejam bem-vindas, valorizadas e incluídas em <br>
+           todos os aspectos da sociedade. A acessibilidade, por outro lado, se concentra em garantir que todos tenham acesso a bens, serviços e locais <br>
+            físicos sem barreiras. Ambos são importantes para garantir a igualdade de oportunidades e o respeito à diversidade. <br>
+         </p>
+         
+    </div>
+    <!--FImConteudo-->
+    <!--SladShow-->
+    <div>
+      <h1 class="w3-center">Barreiras de acessibilidade</h1>
+      <br>
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="imagem/5.jpg" style="width:100%">
+          <div class="text">Caption Text</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="imagem/6.jpg" style="width:100%">
+          <div class="text">Caption Two</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="imagem/7.jpg" style="width:100%">
+          <div class="text">Caption Three</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+        <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+    </div>
+    <!--FIM Sladshow-->
+  </div>
+ 
+</body>
+</html>
